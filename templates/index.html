@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Titanic Predictor</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
   </head>
   <body>
     <center>
     <h2>Home Page</h2>
+    <button type="button" onclick="clicked()">Click me</button>
     <h3>Get your titanic prediction here</h3>
     <p>Enter the deatils of a made up person on the titanic voyage</p>
     <p>we will give a output prediction.</p>
@@ -36,5 +39,6 @@
     </form>
     </legend>
     </center>
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
   </body>
 </html>
